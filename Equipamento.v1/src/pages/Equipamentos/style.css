@@ -186,8 +186,8 @@ hr {
   border-radius: 8px;
   background-color: #dceee8;
   border: none;
-  width: 18%;
-  height: 4vh;
+  width: 25vw;
+  height: 7vh;
   margin-left: 5%;
   margin-top: 2%;
   color: black;
@@ -221,6 +221,7 @@ hr {
   height: 2.8vh;
   margin-left: 5%;
   margin-top: 2%;
+  cursor: pointer;
 }
 
 .btnExcluir button {
@@ -232,6 +233,7 @@ hr {
   height: 2.8vh;
   margin-left: 5%;
   margin-top: 2%;
+  cursor: pointer;
 }
 
 .tabelaEqpm {

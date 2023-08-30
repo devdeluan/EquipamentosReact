@@ -1,75 +1,63 @@
-
+// import api from '../../assets/utils/api';
+// import { useEffect, useState } from "react"
 import './style.css'
 
 function Equipamento() {
 
+// const[equip, setEquip] = useState<any[]>([
+
+// ])
+
+// const[Idgititado, setIdgititado] = useState<string>("");
+
+// const[listaIdFiltrados, setlistaIdFiltrados] = useState<any[]>(equip);
+
+// useEffect(() => {
+//     document.title = "Lista de Devs - VSConnect"
+        
+//     listarDesenvolvedores()
+
+// },[])
+
+// function buscarPorSkill(event:any){
+//     event.preventDefault();
+
+//     const idsFiltrados = equip.filter((eq:any) => eq./*'id definido no dbjson'*/.includes(Idgititado.toLocaleUpperCase()))
+//     if(idsFiltrados.length===0){
+//         alert("Nenhum Id encontrado!!")
+//     }
+//     else{
+//         setlistaIdFiltrados(idsFiltrados)
+//     }
+// }
+
+// function retornoEquipGeral(event:any){
+//     if(event.target.value === ""){
+//         setlistaIdFiltrados(equip)
+//     }
+//     setIdgititado(event.target.value)
+// }
+
+// function listarDesenvolvedores(){
+//     api.get(()).then((resposta: any) => {console.log(resposta.data);
+//         setEquip(resposta.data)
+//     })
+// }
+
+//   function listarEquipamentos(){
+//     api.get(()).then((resposta: any) => {console.log(resposta.data);
+//         setEquipamento(resposta.data)
+//     })
+// }
+
+
 
     return (
-
-
-<> 
-
+<>
 <main>
-  <section className="menu">
-      <div className="menu_conteudo">
-        <ul>
-          <div className="item_menu">
-            <li className="espaco2">
-              <a href="../VisaoGeral/index.html">
-                <span className="icon size1">
-                  <i className="bi bi-bar-chart-line" />
-                </span>
-                <span className="txt_link size1">Visão Geral</span>
-              </a>
-            </li>
-            <li className="pagAtual espaco2">
-              <a href="#">
-                <span className="icon size1 IconAtual">
-                  <i className="bi bi-columns-gap" />
-                </span>
-                <span className="txt_link size1">Equipamentos</span>
-              </a>
-            </li>
-            <li className="espaco2">
-              <a href="../Dashboard/index.html">
-                <span className="icon size1">
-                  <i className="bi bi-clipboard-data" />
-                </span>
-                <span className="txt_link size1">Dashboards</span>
-              </a>
-            </li>
-            <li className="espaco2">
-              <a href="../CadastroUsuario/index.html">
-                <span className="icon size1">
-                  <i className="bi bi-people" />
-                </span>
-                <span className="txt_link size1">Usuários</span>
-              </a>
-            </li>
-            <li className="espaco2">
-              <a href="../Configuracao2.0/index.html">
-                <span className="icon size1">
-                  <i className="bi bi-gear" />
-                </span>
-                <span className="txt_link size1">Configurações</span>
-              </a>
-            </li>
-          </div>
-          <li className="espaco2 btnSair ">
-            <a href="../home/index.html">
-              <span className="icon size1">
-                <i className="bi bi-box-arrow-right" />
-              </span>
-              <span className="txt_link size1">Sair</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </section>
   <section className="equipamentos">
     <div className="painelEqpm">
-      <input className="buscarInput" type="text" placeholder="Buscar..." />
+      <input className="buscarInput" type="text" placeholder="Buscar por ID ..." />
       <div className="menu2Bbtn">
         <a
           className="btnNovoEqpm"
@@ -173,8 +161,8 @@ function Equipamento() {
     </div>
   </section>
 </main>
-</>
 
+</>
 )
 
 }
